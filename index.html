@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <base href="/">
+  
+    <style>
+      html, body {
+        margin: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: #caf1ff26;
+        font-family: -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue;
+      }
+      lit-light-scaffold-app {
+        width: 100%;
+        height: 100%;
+      }
+      * {
+        box-sizing: border-box;
+        --ll-theme-dark: grey;
+        --ll-theme-light: white;
+        --ll-theme-main: #00BA8D;
+        --ll-theme-highlight: #FDFFAB;
+        --ll-theme-invalid: #ff0000;
+      }
+    </style>
+    <title>Lit light scaffold</title>
+  </head>
+  <body>
+
+    <lit-light-scaffold-app id="app"></lit-light-scaffold-app>
+    <script type="module" src="./src/lit-light-scaffold-app.js"></script>
+
+  </body>
+
+</html>

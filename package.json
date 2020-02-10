@@ -1,0 +1,46 @@
+{
+  "name": "lit-light-scaffold-app",
+  "version": "0.0.1",
+  "description": "Scaffold app based on native browser standards",
+  "main": "index.html",
+  "scripts": {
+    "lint:eslint": "eslint --ext .js ./src --ignore-path .gitignore",
+    "format:eslint": "eslint --ext .js ./src --fix --ignore-path .gitignore",
+    "lint": "npm run lint:eslint",
+    "format": "npm run format:eslint",
+    "local-server": "es-dev-server --app-index index.html --node-resolve --open",
+    "local-server:watch": "es-dev-server --app-index index.html --node-resolve --open --watch",
+    "start": "npm run local-server:watch"
+  },
+  "dependencies": {
+    "lit-element-light": "0.0.3",
+    "lit-light-components": "0.0.1"
+  },
+  "devDependencies": {
+    "@webcomponents/webcomponentsjs": "^2.0.0",
+    "es-dev-server": "^1.5.0",
+    "eslint": "^6.6.0",
+    "husky": "^3.0.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SPrinss/lit-light-scaffold-app.git"
+  },
+  "keywords": [
+    "custom-elements",
+    "web-components",
+    "lit-html",
+    "lit-light"
+  ],
+  "author": "Sam Prinssen & Wouter Vroege",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SPrinss/lit-light-scaffold-app/issues"
+  },
+  "homepage": "https://github.com/SPrinss/lit-light-scaffold-app#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run format"
+    }
+  }
+}
